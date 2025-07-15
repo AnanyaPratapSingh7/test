@@ -36,30 +36,30 @@ export default function TestimonialCarousel() {
   }, []);
 
   return (
-    <div className="bg-[#006C7E] py-10 text-white text-center relative">
-      <div className="text-3xl mb-4 text-[#DF4836]">
+    <section className="bg-[#006C7E] py-8 sm:py-10 text-white text-center relative px-2 sm:px-0">
+      <div className="text-2xl sm:text-3xl mb-4 text-[#DF4836]">
         <i className="fas fa-comment-medical"></i>
       </div>
 
-      <p className="max-w-3xl mx-auto italic px-4 transition-opacity duration-500 ease-in-out">
+      <p className="max-w-lg sm:max-w-3xl mx-auto italic px-2 sm:px-4 text-base sm:text-lg transition-opacity duration-500 ease-in-out">
         "{testimonials[index].quote}"
       </p>
 
       {/* Navigation Arrows and Dots */}
-      <div className="flex justify-center items-center gap-6 mt-6 text-2xl">
+      <div className="flex justify-center items-center gap-4 sm:gap-6 mt-6 text-xl sm:text-2xl">
         <button
           onClick={handlePrev}
-          className="hover:text-[#DF4836] transition-colors duration-200"
+          className="hover:text-[#DF4836] transition-colors duration-200 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
           aria-label="Previous testimonial"
         >
           &larr;
         </button>
 
-        <div className="flex gap-2">
+        <div className="flex gap-1 sm:gap-2">
           {testimonials.map((_, i) => (
             <span
               key={i}
-              className={`w-2 h-2 rounded-full inline-block transition-all duration-200 ${
+              className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full inline-block transition-all duration-200 ${
                 i === index ? "bg-red-500" : "bg-red-200"
               }`}
             ></span>
@@ -68,12 +68,12 @@ export default function TestimonialCarousel() {
 
         <button
           onClick={handleNext}
-          className="hover:text-[#DF4836] transition-colors duration-200"
+          className="hover:text-[#DF4836] transition-colors duration-200 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
           aria-label="Next testimonial"
         >
           &rarr;
         </button>
       </div>
-    </div>
+    </section>
   );
 }
