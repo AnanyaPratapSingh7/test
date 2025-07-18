@@ -11,29 +11,41 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className='bg-[#0F9A97] min-h-[320px] sm:min-h-[600px] flex items-center justify-center'>
-        <div className="relative bg-[#DF4836] text-white text-base sm:text-lg leading-snug font-light w-full max-w-3xl sm:max-w-2xl md:max-w-3xl lg:max-w-2xl mx-2 px-4 sm:px-8 py-8 sm:py-0 flex flex-col justify-center items-center sm:h-[270px] rounded-lg sm:rounded-none">
-          {/* Top Left Corner Line */}
-          <div className="hidden sm:block absolute top-[-10px] left-[-10px] w-[150px] h-[2px] bg-white"></div>
-          <div className="hidden sm:block absolute top-[-10px] left-[-10px] w-[2px] h-[150px] bg-white"></div>
+      <div className='bg-[#0F9A97] min-h-[320px] sm:h-[600px] flex items-center justify-center p-2 md:p-8'>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-2 px-4 sm:px-8 gap-8 md:gap-16 min-h-[320px] sm:h-[600px] h-full justify-center">
+          {/* Red Box with Text */}
+          <div className="relative bg-[#DF4836] text-white text-base sm:text-lg leading-snug font-light w-full md:w-1/2 lg:w-[55%] flex flex-col justify-center items-center sm:h-[270px] rounded-lg sm:rounded-none p-4 md:p-8 m-0 top-3">
+            {/* Top Left Corner Line */}
+            <div className="hidden sm:block absolute top-[-10px] left-[-10px] w-[150px] h-[2px] bg-white"></div>
+            <div className="hidden sm:block absolute top-[-10px] left-[-10px] w-[2px] h-[150px] bg-white"></div>
 
-          {/* Bottom Right Corner Line */}
-          <div className="hidden sm:block absolute bottom-[-10px] right-[-10px] w-[150px] h-[2px] bg-white"></div>
-          <div className="hidden sm:block absolute bottom-[-10px] right-[-10px] w-[2px] h-[150px] bg-white"></div>
+            {/* Bottom Right Corner Line */}
+            <div className="hidden sm:block absolute bottom-[-10px] right-[-10px] w-[150px] h-[2px] bg-white"></div>
+            <div className="hidden sm:block absolute bottom-[-10px] right-[-10px] w-[2px] h-[150px] bg-white"></div>
 
-          {/* Main Text */}
-          <p className="text-2xl sm:text-[42px] font-medium text-center">
-            More than 10 year of teaching<br className="hidden sm:block" />
-            and surgical experience in<br className="hidden sm:block" />
-            several government medical<br className="hidden sm:block" />
-            institutions of repute
-          </p>
+            {/* Main Text */}
+            <p className="text-3xl sm:text-[37px] font-medium text-start">
+              More than a decade of teaching and surgical experience in several government medical institutions of repute
+            </p>
+          </div>
+          {/* Banner Image */}
+          <div className="w-full md:w-1/2 lg:w-[45%] relative h-full ml-10">
+          <img 
+  src="/Gesgtro-img-banner.png" 
+  alt="Gastro Banner" 
+  className="hidden sm:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[140%] max-w-none object-contain" 
+  loading="lazy"
+/>
+
+</div>
+
+
         </div>
       </div>
 
       {/* About Section */}
       <div className="bg-[#f5f5f5] min-h-[400px] py-10 sm:py-24">
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 px-4 sm:px-8 md:px-16 max-w-[90vw] sm:max-w-[70vw] mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 px-4 sm:px-8 md:px-16 max-w-[90vw] md:max-w-[80vw] mx-auto">
             {/* Left Side: Image & Name */}
             <div className="flex flex-col items-center w-full max-w-xs md:max-w-none">
               <img fetchPriority="high" src="https://static.wixstatic.com/media/f26426_dec208f7e8a94394a1c30fde3d17a991~mv2.jpg/v1/crop/x_0,y_247,w_1657,h_2260/fill/w_379,h_524,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design%20(9)_edited_edited.jpg" alt="Untitled design (9)_edited_edited.jpg" width="300" className="rounded-lg w-full max-w-[300px] h-auto object-cover" />
@@ -73,17 +85,22 @@ export default function Home() {
         </div>
 
       {/* Experience Section */}
-      <div className="bg-[#EBE9EA] py-8 sm:py-12">
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 px-4 sm:px-8 md:px-16 max-w-[90vw] sm:max-w-[70vw] mx-auto">
-            {/* Left Side: Image (empty for now) */}
-            <div className="hidden md:block w-[400px]">
-              {/* Reserved for future image or content */}
+      <div className="bg-[#E7E8E6]  h-full">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-4 md:gap-6 px-4 sm:px-8 md:px-16 max-w-[90vw] md:max-w-[80vw] mx-auto h-full">
+            {/* Left Side: Image */}
+            <div className="hidden md:flex w-[1600px] items-end justify-center h-full self-end">
+              <img 
+                src="/dr-sandeep-verma-lucknow-medanta.png" 
+                alt="Dr. Sandeep Verma at Medanta Lucknow" 
+                className="w-full h-full max-w-none object-contain"
+                loading="lazy"
+              />
             </div>
 
             {/* Right Side: Experience Text */}
-            <div className="max-w-xl text-[#333] w-full">
+            <div className="max-w-xl text-[#333] w-full py-4">
               <h3 className="text-lg sm:text-xl font-semibold mb-4">Professional Experience & Academic Contribution</h3>
-              <ul className="list-disc pl-5 space-y-3 text-[#006C7E]">
+              <ul className="list-disc pl-5 space-y-2 text-[#006C7E]">
                 <li>
                   <span className="text-[#333] font-medium">Dr. Sandeep Kumar Verma is Director, GI Surgery, GI Oncology & Bariatric Surgery at Medanta Hospital, Lucknow.</span>
                 </li>
@@ -112,7 +129,7 @@ export default function Home() {
 
       {/* Specialization and Expertise Section */}
       <div className="bg-gradient-to-r from-[#e8e8e8] via-white to-white py-8 sm:py-12">
-        <div className="max-w-[90vw] sm:max-w-[70vw] mx-auto px-2 sm:px-8 text-center">
+        <div className="max-w-[90vw] md:max-w-[80vw] mx-auto px-2 sm:px-8 text-center">
             <h2 className="text-xl sm:text-2xl font-semibold mb-8 sm:mb-10">Specialization and Expertise</h2>
             <div className="flex flex-col sm:flex-row justify-center items-stretch gap-8 sm:gap-20 flex-wrap">
               {/* Card 1 */}
@@ -156,7 +173,7 @@ export default function Home() {
 
       {/* Video Testimonials Section */}
       <div className="bg-[#f5f5f5] py-8 sm:py-12">
-        <div className="max-w-[90vw] sm:max-w-[70vw] mx-auto px-2 sm:px-6 text-center">
+        <div className="max-w-[90vw] md:max-w-[80vw] mx-auto px-2 sm:px-6 text-center">
             {/* Heading */}
             <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-8 sm:mb-10">
               What Patients Say <span className="text-[#009DB6]">About Dr. Sandeep Kumar Verma</span>
@@ -200,7 +217,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <div className="bg-[#006C7E] text-white py-8 sm:py-10">
-        <div className="max-w-[90vw] sm:max-w-[70vw] mx-auto px-2 sm:px-6 flex flex-col md:flex-row justify-between items-start gap-6 md:gap-8">
+        <div className="max-w-[90vw] md:max-w-[80vw] mx-auto px-2 sm:px-6 flex flex-col md:flex-row justify-between items-start gap-6 md:gap-8">
 
             {/* Contact Info - Left Section */}
             <div className="md:w-1/3 w-full mb-4 md:mb-0">
