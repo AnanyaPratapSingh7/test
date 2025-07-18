@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className='bg-[#0F9A97] min-h-[320px] sm:h-[600px] flex items-center justify-center p-2 md:p-8'>
-        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-2 px-4 sm:px-8 gap-8 md:gap-16 min-h-[320px] sm:h-[600px] h-full justify-center">
+      <div className='bg-[#0F9A97] min-h-[320px] sm:h-[450px] flex items-center justify-center p-2 md:p-8'>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl mx-2 px-4 sm:px-8 gap-8 md:gap-16 min-h-[320px] sm:h-[450px] h-full justify-center">
           {/* Red Box with Text */}
           <div className="relative bg-[#DF4836] text-white text-base sm:text-lg leading-snug font-light w-full md:w-1/2 lg:w-[55%] flex flex-col justify-center items-center sm:h-[270px] rounded-lg sm:rounded-none p-4 md:p-8 m-0 top-3">
             {/* Top Left Corner Line */}
